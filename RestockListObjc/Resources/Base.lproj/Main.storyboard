@@ -13,7 +13,7 @@
         <!--消耗品リスト-->
         <scene sceneID="5iX-Yk-WKQ">
             <objects>
-                <tableViewController storyboardIdentifier="Main" id="mnu-J1-1eu" customClass="ExpendableTableViewController" customModule="RestockListObjc" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Main" id="mnu-J1-1eu" customClass="ExpendableTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" estimatedRowHeight="120" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="acE-1b-0fM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,9 +41,6 @@
                                                     <buttonConfiguration key="configuration" style="plain" image="checkmark.circle.fill" catalog="system" title="">
                                                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
                                                     </buttonConfiguration>
-                                                    <connections>
-                                                        <action selector="checkAction:" destination="9bB-1S-YM4" eventType="touchUpInside" id="rHY-dS-AFc"/>
-                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cM-re-RYZ">
                                                     <rect key="frame" x="15" y="15" width="20" height="20"/>
@@ -56,9 +53,6 @@
                                                     <buttonConfiguration key="configuration" style="plain" image="ellipsis.circle" catalog="system" title="">
                                                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="15"/>
                                                     </buttonConfiguration>
-                                                    <connections>
-                                                        <action selector="editAction:" destination="9bB-1S-YM4" eventType="touchUpInside" id="n5I-r3-0kP"/>
-                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wy3-Ta-eQZ">
                                                     <rect key="frame" x="349" y="69" width="30" height="30"/>
@@ -71,9 +65,6 @@
                                                     <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title="">
                                                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                                     </buttonConfiguration>
-                                                    <connections>
-                                                        <action selector="plusAction:" destination="9bB-1S-YM4" eventType="touchUpInside" id="VKJ-6J-Ae4"/>
-                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKs-21-GJP">
                                                     <rect key="frame" x="15" y="69" width="30" height="30"/>
@@ -86,9 +77,6 @@
                                                     <buttonConfiguration key="configuration" style="plain" image="minus" catalog="system">
                                                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                                     </buttonConfiguration>
-                                                    <connections>
-                                                        <action selector="minusAction:" destination="9bB-1S-YM4" eventType="touchUpInside" id="OsS-zY-1L3"/>
-                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アイテム名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhl-ZN-zop">
                                                     <rect key="frame" x="40" y="15" width="294" height="20.5"/>
@@ -104,13 +92,13 @@
                                                             <color key="tintColor" name="AccentColor"/>
                                                         </progressView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Of-ft-48j">
-                                                            <rect key="frame" x="10" y="5" width="43.5" height="20.5"/>
+                                                            <rect key="frame" x="10" y="4.5" width="43.5" height="21"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HD3-qb-QrA">
-                                                            <rect key="frame" x="230.5" y="5" width="43.5" height="20.5"/>
+                                                            <rect key="frame" x="230.5" y="4.5" width="43.5" height="21"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <color key="textColor" name="AccentColor"/>
                                                             <nil key="highlightedColor"/>
@@ -159,18 +147,6 @@
                                         <constraint firstItem="eqf-R9-T7z" firstAttribute="leading" secondItem="DXO-74-8pb" secondAttribute="leading" constant="10" id="WeP-aM-V4f"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="checkButton" destination="YuL-EP-SLh" id="Iyv-A2-m9l"/>
-                                    <outlet property="editButton" destination="4cM-re-RYZ" id="Rze-ZR-vVU"/>
-                                    <outlet property="expendableFrame" destination="eqf-R9-T7z" id="6n9-33-zs6"/>
-                                    <outlet property="expendableLabel" destination="Rhl-ZN-zop" id="e7T-WW-rCq"/>
-                                    <outlet property="minusButton" destination="nKs-21-GJP" id="Iq7-m0-f7E"/>
-                                    <outlet property="periodFrame" destination="cnH-Uc-xai" id="rFR-cs-WjQ"/>
-                                    <outlet property="periodLabelLeft" destination="6Of-ft-48j" id="o6x-J3-oEa"/>
-                                    <outlet property="periodLabelRight" destination="HD3-qb-QrA" id="ivy-ok-ZL8"/>
-                                    <outlet property="plusButton" destination="wy3-Ta-eQZ" id="JaK-Jf-pnj"/>
-                                    <outlet property="progressBar" destination="FjO-38-gaZ" id="Aqr-MZ-e7d"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -473,10 +449,10 @@
             <color red="0.082000002264976501" green="0.70999997854232788" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="AccentColor1">
-            <color red="0.082352941176470587" green="0.70980392156862748" blue="0.3843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.082000002264976501" green="0.70999997854232788" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="BackgroundColor">
-            <color red="0.94509803921568625" green="0.94509803921568625" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94499999284744263" green="0.94499999284744263" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CellColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -485,7 +461,7 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FontColor">
-            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

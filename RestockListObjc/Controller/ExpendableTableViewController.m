@@ -19,7 +19,7 @@
     self.tableView.contentInset = UIEdgeInsetsMake(8, 0, 0, 0);
     
 //    if (![NSUserDefaults.standardUserDefaults boolForKey:@"tutorial"]) {
-    
+    NSLog(@"show tutorial");
         [self performSegueWithIdentifier:@"ShowTutorial" sender:nil];
 //        [NSUserDefaults.standardUserDefaults setBool:false forKey:@"tutorial"];
 //    }
