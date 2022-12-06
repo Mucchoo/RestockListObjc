@@ -13,6 +13,9 @@
 		2A6FD57D293C3E4800A743A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6FD57C293C3E4800A743A1 /* Assets.xcassets */; };
 		2A6FD580293C3E4800A743A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6FD57E293C3E4800A743A1 /* LaunchScreen.storyboard */; };
 		2A6FD583293C3E4800A743A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FD582293C3E4800A743A1 /* main.m */; };
+		2A9BC736293CC1F1008F149D /* TutorialPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BC735293CC1F1008F149D /* TutorialPageViewController.m */; };
+		2AC27D71293F681300664526 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC27D70293F681300664526 /* UIView+Extension.m */; };
+		2AD7D541293F64E3008B0A0B /* TutorialFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD7D540293F64E3008B0A0B /* TutorialFirstViewController.m */; };
 		2AECDA56293C4673005F4C28 /* SettingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AECDA55293C4673005F4C28 /* SettingView.storyboard */; };
 		2AECDA58293C467F005F4C28 /* TutorialView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AECDA57293C467F005F4C28 /* TutorialView.storyboard */; };
 		2AECDA60293C4C5B005F4C28 /* ExpendableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AECDA5F293C4C5B005F4C28 /* ExpendableTableViewController.m */; };
@@ -29,6 +32,12 @@
 		2A6FD57F293C3E4800A743A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A6FD581293C3E4800A743A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A6FD582293C3E4800A743A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A9BC734293CC1F1008F149D /* TutorialPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TutorialPageViewController.h; sourceTree = "<group>"; };
+		2A9BC735293CC1F1008F149D /* TutorialPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TutorialPageViewController.m; sourceTree = "<group>"; };
+		2AC27D6F293F681300664526 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		2AC27D70293F681300664526 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		2AD7D53F293F64E3008B0A0B /* TutorialFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TutorialFirstViewController.h; sourceTree = "<group>"; };
+		2AD7D540293F64E3008B0A0B /* TutorialFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TutorialFirstViewController.m; sourceTree = "<group>"; };
 		2AECDA55293C4673005F4C28 /* SettingView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingView.storyboard; sourceTree = "<group>"; };
 		2AECDA57293C467F005F4C28 /* TutorialView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TutorialView.storyboard; sourceTree = "<group>"; };
 		2AECDA5E293C4C5B005F4C28 /* ExpendableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpendableTableViewController.h; sourceTree = "<group>"; };
@@ -83,6 +92,8 @@
 		2A7E40B0293C3F23002A651A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2AC27D6F293F681300664526 /* UIView+Extension.h */,
+				2AC27D70293F681300664526 /* UIView+Extension.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +110,10 @@
 			children = (
 				2AECDA5E293C4C5B005F4C28 /* ExpendableTableViewController.h */,
 				2AECDA5F293C4C5B005F4C28 /* ExpendableTableViewController.m */,
+				2A9BC734293CC1F1008F149D /* TutorialPageViewController.h */,
+				2A9BC735293CC1F1008F149D /* TutorialPageViewController.m */,
+				2AD7D53F293F64E3008B0A0B /* TutorialFirstViewController.h */,
+				2AD7D540293F64E3008B0A0B /* TutorialFirstViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +208,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A6FD572293C3E4700A743A1 /* AppDelegate.m in Sources */,
+				2AD7D541293F64E3008B0A0B /* TutorialFirstViewController.m in Sources */,
+				2A9BC736293CC1F1008F149D /* TutorialPageViewController.m in Sources */,
+				2AC27D71293F681300664526 /* UIView+Extension.m in Sources */,
 				2AECDA60293C4C5B005F4C28 /* ExpendableTableViewController.m in Sources */,
 				2A6FD583293C3E4800A743A1 /* main.m in Sources */,
 				2A6FD575293C3E4700A743A1 /* SceneDelegate.m in Sources */,

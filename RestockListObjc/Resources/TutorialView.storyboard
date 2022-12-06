@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yvp-Hr-wKm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yvp-Hr-wKm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,26 +13,26 @@
         <!--使い方-->
         <scene sceneID="eLe-5S-Zyy">
             <objects>
-                <pageViewController storyboardIdentifier="TutorialPageViewController" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="fullScreen" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Yvp-Hr-wKm" customClass="TutorialPageViewController" customModule="RestockList" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="TutorialPageViewController" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="fullScreen" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Yvp-Hr-wKm" customClass="TutorialPageViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="使い方" id="V9D-wS-H82"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1x-fB-rVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-191" y="1037"/>
+            <point key="canvasLocation" x="-188" y="1037"/>
         </scene>
         <!--Tutorial First View Controller-->
         <scene sceneID="0aM-SQ-Bc9">
             <objects>
-                <viewController storyboardIdentifier="Tutorial1" id="1Ff-d0-W3p" customClass="TutorialFirstViewController" customModule="RestockList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Tutorial1" id="1Ff-d0-W3p" customClass="TutorialFirstViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WBj-yi-Rq8" userLabel="view">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIc-hf-TaF">
-                                <rect key="frame" x="20" y="64" width="374" height="768"/>
+                                <rect key="frame" x="20" y="68" width="374" height="764"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.down.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2cO-wV-gjH">
-                                        <rect key="frame" x="172" y="222.5" width="30" height="29"/>
+                                        <rect key="frame" x="172" y="220.5" width="30" height="29"/>
                                         <color key="tintColor" name="AccentColor1"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="3Eh-8V-oSr"/>
@@ -39,19 +40,19 @@
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tutorial1" translatesAutoresizingMaskIntoConstraints="NO" id="q0C-rN-Aha">
-                                        <rect key="frame" x="20" y="127" width="334" height="75"/>
+                                        <rect key="frame" x="20" y="125" width="334" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="q0C-rN-Aha" secondAttribute="height" multiplier="334:75" id="mwL-tF-4Wp"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tutorial2" translatesAutoresizingMaskIntoConstraints="NO" id="KqR-Ei-cHf">
-                                        <rect key="frame" x="20" y="272" width="334" height="184"/>
+                                        <rect key="frame" x="20" y="270" width="334" height="184"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="KqR-Ei-cHf" secondAttribute="height" multiplier="167:92" id="hvn-CZ-TuR"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="まずは右上の＋ボタンからアイテムを追加しましょう" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkg-Mr-gB2">
-                                        <rect key="frame" x="20" y="476" width="334" height="36"/>
+                                        <rect key="frame" x="20" y="474" width="334" height="42.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
@@ -93,9 +94,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundView" destination="WBj-yi-Rq8" id="0zx-wv-urz"/>
-                        <outlet property="cardView" destination="RIc-hf-TaF" id="bIx-ea-MhF"/>
-                        <outlet property="circleView" destination="bXp-uS-65x" id="MKX-K7-HQt"/>
+                        <outlet property="backgroundView" destination="WBj-yi-Rq8" id="LXb-Qp-aUU"/>
+                        <outlet property="cardView" destination="RIc-hf-TaF" id="SX6-Ex-OWU"/>
+                        <outlet property="circleView" destination="bXp-uS-65x" id="8oC-aF-3Tr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojQ-Yq-Vnz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -105,16 +106,16 @@
         <!--Tutorial Second View Controller-->
         <scene sceneID="J3r-Tp-HYy">
             <objects>
-                <viewController storyboardIdentifier="Tutorial2" id="cbE-zI-Ahl" customClass="TutorialSecondViewController" customModule="RestockList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Tutorial2" id="cbE-zI-Ahl" customClass="TutorialSecondViewController" customModule="RestockListObjc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="1" contentMode="scaleToFill" id="kaK-6a-SCD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojn-Vz-Qt8">
-                                <rect key="frame" x="20" y="64" width="374" height="768"/>
+                                <rect key="frame" x="20" y="68" width="374" height="764"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.down.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Oiz-Ci-SkK">
-                                        <rect key="frame" x="172" y="287.5" width="30" height="29"/>
+                                        <rect key="frame" x="172" y="285.5" width="30" height="29"/>
                                         <color key="tintColor" name="AccentColor1"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="BV7-ZB-8It"/>
@@ -122,19 +123,19 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tutorial3" translatesAutoresizingMaskIntoConstraints="NO" id="GcD-dE-kYG">
-                                        <rect key="frame" x="20" y="172" width="334" height="95"/>
+                                        <rect key="frame" x="20" y="170" width="334" height="95"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="GcD-dE-kYG" secondAttribute="height" multiplier="334:95" id="Tiv-Hb-Il2"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tutorial4" translatesAutoresizingMaskIntoConstraints="NO" id="8xE-tj-nFs">
-                                        <rect key="frame" x="20" y="337" width="334" height="94"/>
+                                        <rect key="frame" x="20" y="335" width="334" height="94"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="8xE-tj-nFs" secondAttribute="height" multiplier="167:47" id="zm3-Lh-aCv"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="入荷したアイテムは✔︎を押して残り期間をリセットできます" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvZ-Ky-2Yl">
-                                        <rect key="frame" x="20" y="451" width="334" height="36"/>
+                                        <rect key="frame" x="20" y="449" width="334" height="42.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" name="FontColor"/>
                                         <color key="highlightedColor" systemColor="labelColor"/>
@@ -209,7 +210,7 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="入荷したアイテムは✔︎を押して残り期間をリセットできます" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7C-Lt-DGa">
-                            <rect key="frame" x="20" y="456" width="334" height="36"/>
+                            <rect key="frame" x="20" y="456" width="334" height="42.5"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="highlightedColor" systemColor="labelColor"/>
@@ -237,22 +238,22 @@
         <!--Tutorial Third View Controller-->
         <scene sceneID="P2S-yb-0xk">
             <objects>
-                <viewController storyboardIdentifier="Tutorial3" id="Vxh-d5-5GR" customClass="TutorialThirdViewController" customModule="RestockList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Tutorial3" id="Vxh-d5-5GR" customClass="TutorialThirdViewController" customModule="RestockListObjc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="2" contentMode="scaleToFill" id="deb-bj-ghM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="td9-1Y-erP">
-                                <rect key="frame" x="20" y="64" width="374" height="768"/>
+                                <rect key="frame" x="20" y="68" width="374" height="764"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ウィジェットを追加すれば残り少ないアイテムを一目で確認できます" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wuu-y2-8c9">
-                                        <rect key="frame" x="20" y="502.5" width="334" height="36"/>
+                                        <rect key="frame" x="20" y="500.5" width="334" height="42.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tutorial5" translatesAutoresizingMaskIntoConstraints="NO" id="MKm-Wu-rNt">
-                                        <rect key="frame" x="20" y="145.5" width="334" height="357"/>
+                                        <rect key="frame" x="20" y="143.5" width="334" height="357"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="MKm-Wu-rNt" secondAttribute="height" multiplier="334:357" id="nJj-et-bSh"/>
                                         </constraints>
@@ -301,29 +302,29 @@
         <!--Tutorial Fourth View Controller-->
         <scene sceneID="hx7-Ta-GJK">
             <objects>
-                <viewController storyboardIdentifier="Tutorial4" id="klP-9i-qYh" customClass="TutorialFourthViewController" customModule="RestockList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Tutorial4" id="klP-9i-qYh" customClass="TutorialFourthViewController" customModule="RestockListObjc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="3" contentMode="scaleToFill" id="9kJ-gL-vjo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2z-FU-6H5">
-                                <rect key="frame" x="20" y="64" width="374" height="768"/>
+                                <rect key="frame" x="20" y="68" width="374" height="764"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list.bullet.rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mdg-iT-995">
-                                        <rect key="frame" x="40" y="197" width="294" height="213.5"/>
+                                        <rect key="frame" x="40" y="195" width="294" height="213.5"/>
                                         <color key="tintColor" name="AccentColor1"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Mdg-iT-995" secondAttribute="height" multiplier="49:36" id="ffG-dD-sBr"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自分だけの消耗品リストを作成しましょう！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHo-yK-dKu">
-                                        <rect key="frame" x="20" y="412" width="334" height="17"/>
+                                        <rect key="frame" x="20" y="410" width="334" height="42.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" name="FontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcl-C6-f6K">
-                                        <rect key="frame" x="20" y="449" width="334" height="50"/>
+                                        <rect key="frame" x="20" y="472.5" width="334" height="50"/>
                                         <color key="backgroundColor" name="AccentColor1"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="pH7-xZ-9Ej"/>
@@ -390,22 +391,22 @@
         <image name="Tutorial3" width="788" height="220"/>
         <image name="Tutorial4" width="788" height="218"/>
         <image name="Tutorial5" width="359" height="378"/>
-        <image name="arrow.down.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.down.circle.fill" catalog="system" width="128" height="123"/>
         <image name="list.bullet.rectangle.fill" catalog="system" width="128" height="93"/>
         <namedColor name="AccentColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.082000002264976501" green="0.70999997854232788" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="AccentColor1">
-            <color red="0.082352941176470587" green="0.70980392156862748" blue="0.3843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.082000002264976501" green="0.70999997854232788" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ClearColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FontColor">
-            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
