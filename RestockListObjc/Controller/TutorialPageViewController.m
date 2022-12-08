@@ -7,7 +7,7 @@
 
 #import "TutorialPageViewController.h"
 
-@interface TutorialPageViewController () <UIPageViewControllerDataSource>
+@interface TutorialPageViewController ()
 
 @end
 
@@ -15,7 +15,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSLog(@"TutorialViewController viewDidLoad");
     self.dataSource = self;
     
     UIViewController *firstPage = [self.storyboard instantiateViewControllerWithIdentifier:@"Tutorial1"];
@@ -23,7 +23,8 @@
     UIViewController *thirdPage = [self.storyboard instantiateViewControllerWithIdentifier:@"Tutorial3"];
     UIViewController *fourthPage = [self.storyboard instantiateViewControllerWithIdentifier:@"Tutorial4"];
     
-    NSMutableArray *controllers = [[NSMutableArray alloc] initWithObjects:firstPage, secondPage, thirdPage, fourthPage, nil];
+    _controllers = [[NSMutableArray alloc] initWithObjects:firstPage, secondPage, thirdPage, fourthPage, nil];
+    [self setViewControllers:@[firstPage] direction:UIPageViewControllerNavigationDirectionForward animated:false completion:nil];
     
     [self.view addSubview:_usageLabel];
     _usageLabel.layer.cornerRadius = 20;
@@ -50,18 +51,32 @@
     [_pageControl setUserInteractionEnabled:false];
     _pageControl.pageIndicatorTintColor = [UIColor grayColor];
     _pageControl.currentPageIndicatorTintColor = [UIColor clearColor];
+    
+    NSLog(@"TutorialViewController viewDidLoad end");
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-//    _usageLabel.textColor = ThemeModel.tintColor
+    
+    NSLog(@"TutorialViewController viewWillAppear");
+
+    ThemeModel *theme = [[ThemeModel alloc] init];
+    _usageLabel.textColor = theme.color;
+    
+    NSLog(@"TutorialViewController viewWillAppear end");
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
 }
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
+    NSLog(@"\n presentationCount %d", _controllers.count);
     return _controllers.count;
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
+    NSLog(@"\n before currentIndex %d", _currentIndex);
     if (_currentIndex > 1) {
         _currentIndex -= 1;
     }
@@ -69,6 +84,7 @@
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
+    NSLog(@"\n after currentIndex %d", _currentIndex);
     if (_currentIndex < _controllers.count) {
         _currentIndex += 1;
     }

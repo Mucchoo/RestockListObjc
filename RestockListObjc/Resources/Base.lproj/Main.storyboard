@@ -171,7 +171,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="NPC-Ev-kK3" kind="show" identifier="AddSegue" id="ZEH-CP-QX6"/>
-                        <segue destination="BED-X0-VE1" kind="presentation" identifier="ShowTutorial" id="CNN-8H-wkS"/>
+                        <segue destination="BED-X0-VE1" kind="presentation" identifier="ShowTutorial" animates="NO" id="CNN-8H-wkS"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vG7-TU-xfm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

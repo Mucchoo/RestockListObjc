@@ -1,22 +1,20 @@
 //
-//  TutorialFirstViewController.m
+//  TutorialThirdViewController.m
 //  RestockListObjc
 //
-//  Created by Musa Yazuju on 12/6/22.
+//  Created by Musa Yazuju on 12/8/22.
 //
 
-#import "TutorialFirstViewController.h"
+#import "TutorialThirdViewController.h"
 
-@interface TutorialFirstViewController ()
+@interface TutorialThirdViewController ()
 
 @end
 
-@implementation TutorialFirstViewController
+@implementation TutorialThirdViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSLog(@"TutorialViewController viewDidLoad");
     
     _cardView.layer.cornerRadius = 20;
     _circleView.layer.cornerRadius = 400;

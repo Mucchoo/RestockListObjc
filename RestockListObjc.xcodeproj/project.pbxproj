@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A20093B2941A44700C85BE9 /* TutorialSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A20093A2941A44700C85BE9 /* TutorialSecondViewController.m */; };
 		2A6FD572293C3E4700A743A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FD571293C3E4700A743A1 /* AppDelegate.m */; };
 		2A6FD575293C3E4700A743A1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FD574293C3E4700A743A1 /* SceneDelegate.m */; };
 		2A6FD57B293C3E4700A743A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6FD579293C3E4700A743A1 /* Main.storyboard */; };
 		2A6FD57D293C3E4800A743A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6FD57C293C3E4800A743A1 /* Assets.xcassets */; };
 		2A6FD580293C3E4800A743A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6FD57E293C3E4800A743A1 /* LaunchScreen.storyboard */; };
 		2A6FD583293C3E4800A743A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FD582293C3E4800A743A1 /* main.m */; };
+		2A8713AE2941F7B00032E006 /* TutorialThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8713AD2941F7B00032E006 /* TutorialThirdViewController.m */; };
+		2A8713B12941F87A0032E006 /* TutorialFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8713B02941F87A0032E006 /* TutorialFourthViewController.m */; };
 		2A9BC736293CC1F1008F149D /* TutorialPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BC735293CC1F1008F149D /* TutorialPageViewController.m */; };
 		2AC27D71293F681300664526 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC27D70293F681300664526 /* UIView+Extension.m */; };
+		2AC27D74293F6B2000664526 /* ThemeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC27D73293F6B2000664526 /* ThemeModel.m */; };
 		2AD7D541293F64E3008B0A0B /* TutorialFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD7D540293F64E3008B0A0B /* TutorialFirstViewController.m */; };
 		2AECDA56293C4673005F4C28 /* SettingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AECDA55293C4673005F4C28 /* SettingView.storyboard */; };
 		2AECDA58293C467F005F4C28 /* TutorialView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AECDA57293C467F005F4C28 /* TutorialView.storyboard */; };
@@ -22,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A2009392941A44700C85BE9 /* TutorialSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TutorialSecondViewController.h; sourceTree = "<group>"; };
+		2A20093A2941A44700C85BE9 /* TutorialSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TutorialSecondViewController.m; sourceTree = "<group>"; };
 		2A6FD56D293C3E4700A743A1 /* RestockListObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestockListObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6FD570293C3E4700A743A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A6FD571293C3E4700A743A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,10 +38,16 @@
 		2A6FD57F293C3E4800A743A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A6FD581293C3E4800A743A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A6FD582293C3E4800A743A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A8713AC2941F7AF0032E006 /* TutorialThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TutorialThirdViewController.h; sourceTree = "<group>"; };
+		2A8713AD2941F7B00032E006 /* TutorialThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TutorialThirdViewController.m; sourceTree = "<group>"; };
+		2A8713AF2941F87A0032E006 /* TutorialFourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TutorialFourthViewController.h; sourceTree = "<group>"; };
+		2A8713B02941F87A0032E006 /* TutorialFourthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TutorialFourthViewController.m; sourceTree = "<group>"; };
 		2A9BC734293CC1F1008F149D /* TutorialPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TutorialPageViewController.h; sourceTree = "<group>"; };
 		2A9BC735293CC1F1008F149D /* TutorialPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TutorialPageViewController.m; sourceTree = "<group>"; };
 		2AC27D6F293F681300664526 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		2AC27D70293F681300664526 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		2AC27D72293F6B2000664526 /* ThemeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeModel.h; sourceTree = "<group>"; };
+		2AC27D73293F6B2000664526 /* ThemeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeModel.m; sourceTree = "<group>"; };
 		2AD7D53F293F64E3008B0A0B /* TutorialFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TutorialFirstViewController.h; sourceTree = "<group>"; };
 		2AD7D540293F64E3008B0A0B /* TutorialFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TutorialFirstViewController.m; sourceTree = "<group>"; };
 		2AECDA55293C4673005F4C28 /* SettingView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingView.storyboard; sourceTree = "<group>"; };
@@ -94,6 +106,8 @@
 			children = (
 				2AC27D6F293F681300664526 /* UIView+Extension.h */,
 				2AC27D70293F681300664526 /* UIView+Extension.m */,
+				2AC27D72293F6B2000664526 /* ThemeModel.h */,
+				2AC27D73293F6B2000664526 /* ThemeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +128,12 @@
 				2A9BC735293CC1F1008F149D /* TutorialPageViewController.m */,
 				2AD7D53F293F64E3008B0A0B /* TutorialFirstViewController.h */,
 				2AD7D540293F64E3008B0A0B /* TutorialFirstViewController.m */,
+				2A2009392941A44700C85BE9 /* TutorialSecondViewController.h */,
+				2A20093A2941A44700C85BE9 /* TutorialSecondViewController.m */,
+				2A8713AC2941F7AF0032E006 /* TutorialThirdViewController.h */,
+				2A8713AD2941F7B00032E006 /* TutorialThirdViewController.m */,
+				2A8713AF2941F87A0032E006 /* TutorialFourthViewController.h */,
+				2A8713B02941F87A0032E006 /* TutorialFourthViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,6 +182,7 @@
 				TargetAttributes = {
 					2A6FD56C293C3E4700A743A1 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -208,11 +229,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A6FD572293C3E4700A743A1 /* AppDelegate.m in Sources */,
+				2A8713B12941F87A0032E006 /* TutorialFourthViewController.m in Sources */,
 				2AD7D541293F64E3008B0A0B /* TutorialFirstViewController.m in Sources */,
+				2A20093B2941A44700C85BE9 /* TutorialSecondViewController.m in Sources */,
 				2A9BC736293CC1F1008F149D /* TutorialPageViewController.m in Sources */,
+				2AC27D74293F6B2000664526 /* ThemeModel.m in Sources */,
 				2AC27D71293F681300664526 /* UIView+Extension.m in Sources */,
 				2AECDA60293C4C5B005F4C28 /* ExpendableTableViewController.m in Sources */,
 				2A6FD583293C3E4800A743A1 /* main.m in Sources */,
+				2A8713AE2941F7B00032E006 /* TutorialThirdViewController.m in Sources */,
 				2A6FD575293C3E4700A743A1 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon0;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DS86AF5N83;
@@ -379,6 +405,8 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -389,6 +417,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon0;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DS86AF5N83;
@@ -413,6 +442,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

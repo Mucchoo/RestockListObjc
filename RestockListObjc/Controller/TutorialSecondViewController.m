@@ -1,28 +1,29 @@
 //
-//  TutorialFirstViewController.m
+//  TutorialSecondViewController.m
 //  RestockListObjc
 //
-//  Created by Musa Yazuju on 12/6/22.
+//  Created by Musa Yazuju on 12/8/22.
 //
 
-#import "TutorialFirstViewController.h"
+#import "TutorialSecondViewController.h"
 
-@interface TutorialFirstViewController ()
+@interface TutorialSecondViewController ()
 
 @end
 
-@implementation TutorialFirstViewController
+@implementation TutorialSecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"TutorialViewController viewDidLoad");
-    
+    [_cardView setshadow];
     _cardView.layer.cornerRadius = 20;
     _circleView.layer.cornerRadius = 400;
     
     ThemeModel *theme = [[ThemeModel alloc] init];
-    [theme setshadowWith:_cardView];
+    for (UIImageView *key in _itemImages) {
+        [theme setshadowWith:key];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {

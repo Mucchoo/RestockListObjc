@@ -6,15 +6,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ThemeModel.h"
+#import "TutorialFirstViewController.h"
+#import "TutorialSecondViewController.h"
+#import "TutorialThirdViewController.h"
+#import "TutorialFourthViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TutorialPageViewController : UIPageViewController
+@interface TutorialPageViewController : UIPageViewController <UIPageViewControllerDataSource>
 
-@property (nonatomic) NSMutableArray *controllers;
 @property (nonatomic) UIPageControl *pageControl;
 @property (nonatomic) UILabel *usageLabel;
 @property (nonatomic) int currentIndex;
+@property (nonatomic) NSMutableArray *controllers;
 
 @end
 

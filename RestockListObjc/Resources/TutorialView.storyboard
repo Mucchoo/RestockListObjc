@@ -106,7 +106,7 @@
         <!--Tutorial Second View Controller-->
         <scene sceneID="J3r-Tp-HYy">
             <objects>
-                <viewController storyboardIdentifier="Tutorial2" id="cbE-zI-Ahl" customClass="TutorialSecondViewController" customModule="RestockListObjc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Tutorial2" id="cbE-zI-Ahl" customClass="TutorialSecondViewController" sceneMemberID="viewController">
                     <view key="view" tag="1" contentMode="scaleToFill" id="kaK-6a-SCD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,11 +177,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundView" destination="kaK-6a-SCD" id="8KR-nn-A6R"/>
-                        <outlet property="cardView" destination="Ojn-Vz-Qt8" id="L7k-cM-x0f"/>
-                        <outlet property="circleView" destination="URl-WR-hwG" id="kI7-ee-VM8"/>
+                        <outlet property="backgroundView" destination="kaK-6a-SCD" id="0f9-Or-2rz"/>
+                        <outlet property="cardView" destination="Ojn-Vz-Qt8" id="Uhn-xQ-J3X"/>
+                        <outlet property="circleView" destination="URl-WR-hwG" id="uoo-3f-c9i"/>
                         <outletCollection property="itemImage" destination="GcD-dE-kYG" collectionClass="NSMutableArray" id="pbu-Vo-kuT"/>
                         <outletCollection property="itemImage" destination="8xE-tj-nFs" collectionClass="NSMutableArray" id="7So-wl-z7K"/>
+                        <outletCollection property="itemImages" destination="GcD-dE-kYG" id="dFU-RW-Waf"/>
+                        <outletCollection property="itemImages" destination="8xE-tj-nFs" id="1Ba-gA-oK3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ZD-MS-gNU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -238,7 +240,7 @@
         <!--Tutorial Third View Controller-->
         <scene sceneID="P2S-yb-0xk">
             <objects>
-                <viewController storyboardIdentifier="Tutorial3" id="Vxh-d5-5GR" customClass="TutorialThirdViewController" customModule="RestockListObjc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Tutorial3" id="Vxh-d5-5GR" customClass="TutorialThirdViewController" sceneMemberID="viewController">
                     <view key="view" tag="2" contentMode="scaleToFill" id="deb-bj-ghM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,9 +292,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundView" destination="deb-bj-ghM" id="Pau-SB-yeQ"/>
-                        <outlet property="cardView" destination="td9-1Y-erP" id="fYz-Cn-s7A"/>
-                        <outlet property="circleView" destination="RQI-Y4-Cda" id="bov-AT-WEw"/>
+                        <outlet property="backgroundView" destination="deb-bj-ghM" id="7yn-kq-7bq"/>
+                        <outlet property="cardView" destination="td9-1Y-erP" id="zgy-ce-41C"/>
+                        <outlet property="circleView" destination="RQI-Y4-Cda" id="gov-xc-DaK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVo-aJ-i95" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -302,7 +304,7 @@
         <!--Tutorial Fourth View Controller-->
         <scene sceneID="hx7-Ta-GJK">
             <objects>
-                <viewController storyboardIdentifier="Tutorial4" id="klP-9i-qYh" customClass="TutorialFourthViewController" customModule="RestockListObjc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Tutorial4" id="klP-9i-qYh" customClass="TutorialFourthViewController" sceneMemberID="viewController">
                     <view key="view" tag="3" contentMode="scaleToFill" id="9kJ-gL-vjo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -335,7 +337,7 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="startAction:" destination="klP-9i-qYh" eventType="touchUpInside" id="4xw-qU-bYp"/>
+                                            <action selector="startAction:" destination="klP-9i-qYh" eventType="touchUpInside" id="PQV-h2-A0T"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -373,11 +375,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundView" destination="9kJ-gL-vjo" id="7S9-0O-l7r"/>
-                        <outlet property="cardView" destination="V2z-FU-6H5" id="38c-Ma-bpL"/>
-                        <outlet property="circleView" destination="9zt-KS-Rdn" id="FHS-9A-eBA"/>
-                        <outlet property="listImageView" destination="Mdg-iT-995" id="MwF-jP-Cxo"/>
-                        <outlet property="startButton" destination="Qcl-C6-f6K" id="i4q-Ij-QhR"/>
+                        <outlet property="backgroundView" destination="9kJ-gL-vjo" id="MZ7-pg-j0q"/>
+                        <outlet property="cardView" destination="V2z-FU-6H5" id="kuT-gY-7yu"/>
+                        <outlet property="circleView" destination="9zt-KS-Rdn" id="mE7-aF-6nW"/>
+                        <outlet property="listImageView" destination="Mdg-iT-995" id="0Ef-NZ-XJm"/>
+                        <outlet property="startButton" destination="Qcl-C6-f6K" id="8sk-4w-gIV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nT-IE-uzS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
