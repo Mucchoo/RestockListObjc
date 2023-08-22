@@ -1,2 +1,2 @@
 # RestockListObjc
-RestockListというSwiftの個人開発アプリをObjective-Cで少しリメイクしてみた
+RestockListというSwiftの個人開発アプリをObjective-Cで少しリメイクしてみた（未完成です）
